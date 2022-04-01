@@ -1,0 +1,31 @@
+﻿@model List<SmartPulse.Models.TableValue>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Tarih</th>
+            <th scope="col">Toplam İşlem Miktarı(MWh)</th>
+            <th scope="col">Toplam İşlem Tutarı(TL)</th>
+            <th scope="col">Ağırlık Ortalama Fiyat(TL/MWh)</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var tradeHistory in Model)
+        {
+            <tr>
+                <th scope="row">@tradeHistory.Tarih</th>
+                <td style="text-align: right;" >@tradeHistory.ToplamIslemMIktari</td>
+                <td style="text-align: right;"><span style="float: left" class="fa fa-try"> </span>@tradeHistory.ToplamIslemTutari</td>
+                <td style="text-align: right;">@tradeHistory.AgirlikliOrtalamaFiyat</td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
