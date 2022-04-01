@@ -5,4 +5,6 @@ SmartPulse Ödev
 - SmartPulse->Controller->HomeController => Get işlemi ve diğer işlemlerin yapıldığı dosya.
 - SmartPulse->Views->Home->Index => Tablonun ekranda gösterilmesi için yapılan işlemlerin bulunduğu dosya.
 
-Örnek Çıktı 
+ Örnek Çıktı 
+
+![My Image](SmartPulse/SmartPulse/wwwroot/img/smartpulse.png)
